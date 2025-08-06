@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Artigo</title>
+</head>
+<body>
+    <h1>Responda abaixo para excluir um artigo:</h1>
+
+    <form action="https://localhost:7036/adicionar-artigo" method="POST">
+        <label for="categorias">Categoria a ser alterada:</label>
+        <select name="categorias" id="categorias">
+            <option value="Biologia">Biologia</option>
+            <option value="Quimica">Química</option>
+            <option value="Fisica">Física</option>
+            <option value="Astronomia">Astronomia</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Medicina">Medicina</option>
+        </select>
+        
+        <br><br>
+
+        <label for="titulo">Título do artigo:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Digite o título do artigo" required>
+
+        <br><br>
+
+        <button type="submit">Excluir artigo</button>
+    </form>
+
+    <br><br>
+
+    <a href="/"><button>Voltar</button></a>
+
+    <script src="enciclopedia.js"></script>
+</body>
+</html>
